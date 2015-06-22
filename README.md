@@ -32,3 +32,6 @@ You should have the following in your Gemfile:
     # Use Unicorn as our app server
     gem 'unicorn'
 
+    # Use Figaro for saving secrets in environment variable
+    gem 'figaro'
+
