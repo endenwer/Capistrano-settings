@@ -1,5 +1,5 @@
 set :application, 'app_name'
-set :deploy_user, 'deploy'
+set :deploy_user, 'deployer'
 
 # setup repo details
 set :scm, :git
@@ -15,7 +15,7 @@ set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 set :keep_releases, 5
 
 # files we want symlinking to specific entries in shared
-set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/database.yml config/applicatoin.yml}
 
 # dirs we want symlinking to shared
 set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
